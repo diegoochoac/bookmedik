@@ -50,6 +50,12 @@ class PacientData {
 		return Model::many($query[0],new PacientData());
 	}
 
+	public static function getCedula($cc){
+		$sql = "select * from ".self::$tablename." where id=$cc";
+		$query = Executor::doit($sql);
+		return Model::many($query[0],new PacientData());
+	}
+
 	public static function getAllActive(){
 		$sql = "select * from client where last_active_at>=date_sub(NOW(),interval 3 second)";
 		$query = Executor::doit($sql);

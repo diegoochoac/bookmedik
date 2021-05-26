@@ -1,8 +1,7 @@
 <?php
 /**
-* BookMedik
-* @author evilnapsis
-* @url http://evilnapsis.com/about/
+* SISINFALCALDIAJAMUNDI
+* @author DiegoOchoa
 **/
 if(isset($_POST)){
 $p = PostData::getById($_POST['id']);

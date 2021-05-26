@@ -1,10 +1,11 @@
 /*
-* BookMedik Database
-* @author Evilnapsis
+* SISINFALCALDIAJAMUNDI Database
+* @author DiegoOchoa
 */
 create database bookmedik;
 use bookmedik; 
 set sql_mode='';
+
 create table user (
 	id int not null auto_increment primary key,
 	username varchar(50),
@@ -16,9 +17,6 @@ create table user (
 	is_admin boolean not null default 0,
 	created_at datetime
 );
-
-insert into user (username,password,is_admin,is_active,created_at) value ("admin",sha1(md5("admin")),1,1,NOW());
-
 
 create table pacient (
 	id int not null auto_increment primary key,
@@ -44,7 +42,6 @@ create table category (
 	name varchar(200)
 	);
 
-insert into category (name) value ("Modulo 1");
 
 
 create table medic (
@@ -71,14 +68,14 @@ create table status (
 	name varchar(100)
 );
 
-insert into status (id,name) values (1,"Pendiente"), (2,"Aplicada"),(3,"No asistio"),(4,"Cancelada");
+
 
 create table payment (
 	id int not null auto_increment primary key,
 	name varchar(100)
 );
 
-insert into payment (id,name) values  (1,"Pendiente"),(2,"Pagado"),(3,"Anulado");
+
 
 create table reservation(
 	id int not null auto_increment primary key,
@@ -100,7 +97,13 @@ create table reservation(
 	foreign key (payment_id) references payment(id),
 	status_id int not null default 1,
 	foreign key (status_id) references status(id),
-	foreign key (user_id) references user(id),
+	foreign key (user_id) references user),
 	foreign key (pacient_id) references pacient(id),
 	foreign key (medic_id) references medic(id)
 );
+
+
+insert into payment (id,name) values  (1,"Pendiente"),(2,"Pagado"),(3,"Anulado");
+insert into status (id,name) values (1,"Pendiente"), (2,"Aplicada"),(3,"No asistio"),(4,"Cancelada");
+insert into category (name) value ("Modulo 1");
+insert into user (username,password,is_admin,is_active,created_at) value ("admin",sha1(md5("admin")),1,1,NOW());

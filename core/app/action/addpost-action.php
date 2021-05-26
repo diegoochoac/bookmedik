@@ -1,7 +1,7 @@
 <?php
 /**
-* BookMedik
-* @author evilnapsis
+* SISINFALCALDIAJAMUNDI
+* @author DiegoOchoa
 **/
 if(isset($_POST)){
 $p = new PostData();

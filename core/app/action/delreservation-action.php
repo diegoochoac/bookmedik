@@ -1,7 +1,7 @@
 <?php
 /**
-* BookMedik
-* @author evilnapsis
+* SISINFALCALDIAJAMUNDI
+* @author DiegoOchoa
 **/
 $user = ReservationData::getById($_GET["id"]);
 $user->del();

@@ -13,10 +13,30 @@
 </div>
 <div class="card">
   <div class="card-header" data-background-color="blue">
-      <h4 class="title">Pacientes</h4>
+      <h4 class="title">Personas Victimas Conflicto</h4>
   </div>
+
   <div class="card-content table-responsive">
-	<a href="index.php?view=newpacient" class="btn btn-default"><i class='fa fa-male'></i> Nuevo Paciente</a>
+	<a href="index.php?view=validatepacient" class="btn btn-default"><i class='fa fa-male'></i> Validar Persona</a>
+		
+		<?php
+		$users = PacientData::getAll();
+		if(count($users)>0){
+			// si hay usuarios
+		?>
+
+		<?php
+
+		}else{
+			// echo "<p class='alert alert-danger'>No Se ha Validado Persona</p>";
+		}
+		?>
+
+
+	</div>
+
+  <div class="card-content table-responsive">
+	<a href="index.php?view=newpacient" class="btn btn-default"><i class='fa fa-male'></i> Registrar Persona</a>
 		<?php
 
 		$users = PacientData::getAll();
@@ -49,19 +69,15 @@
 				<?php
 
 			}
-			?>
+				?>
 			</table>
 			</div>
 			</div>
-			<?php
-
-
-
+		
+		<?php
 		}else{
-			echo "<p class='alert alert-danger'>No hay pacientes</p>";
+			// echo "<p class='alert alert-danger'>No Se ha Registrado Persona</p>";
 		}
-
-
 		?>
 
 

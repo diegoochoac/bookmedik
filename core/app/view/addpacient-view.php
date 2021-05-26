@@ -1,8 +1,7 @@
 <?php
 /**
 * BookMedik
-* @author evilnapsis
-* @url http://evilnapsis.com/about/
+* @author DiegoOchoa
 **/
 
 if(count($_POST)>0){

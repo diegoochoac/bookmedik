@@ -1,4 +1,4 @@
-Author: evilnapsis
+Author: DiegoOchoa
 Proyecto: lb-admin
 Fecha de Lanzamiento: 2016-11-22
 
@@ -12,5 +12,5 @@ Login : http://localhost/lb-admin/
 Usuario: admin
 Password: admin
 
-Dudas y sugerencias a mi direccion email evilnapsis@gmail.com
-Powered By http://evilnapsis.com
+Dudas y sugerencias a mi direccion email oficina.tic@jamundi.gov.co 
+Powered By http://jamundi.gov.co

@@ -59,7 +59,7 @@ $word->addTableStyle('table1', $styleTable,$styleFirstRow);
 $section1->addText("");
 $section1->addText("");
 $section1->addText("");
-$section1->addText("Generado por BookMedik v2.0");
+$section1->addText("Generado por Alcaldia de Jamundi Oficina TIC v1.0");
 $filename = "report-".time().".docx";
 #$word->setReadDataOnly(true);
 $word->save($filename,"Word2007");

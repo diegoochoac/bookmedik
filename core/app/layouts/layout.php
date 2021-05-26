@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title>BookMedik - Dashboard</title>
+  <title>Sistema Informacion Alcaldia Jamundi - Dashboard</title>
 
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -29,48 +29,92 @@
       <div class="sidebar" data-color="blue">
       <div class="logo">
         <a href="./" class="simple-text">
-          BookMedik
+          Sistema de Informacion
         </a>
       </div>
 
         <div class="sidebar-wrapper">
               <ul class="nav">
-                  <li class="">
+                  <!-- <li class="">
                       <a href="./">
                           <i class="fa fa-home"></i>
                           <p>Inicio</p>
                       </a>
-                  </li>
+                  </li> -->
                   <li>
+                      <a href="./?view=pacients">
+                          <i class="fa fa-male"></i>
+                          <p>Usuario Victima</p>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="">
+                          <i class="fa fa-support"></i>
+                          <p>Atención al Usuario</p>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="">
+                          <i class="fa fa-support"></i>
+                          <p>Atención Psicosocial</p>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="">
+                          <i class="fa fa-support"></i>
+                          <p>Ayuda Humanitaria</p>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="">
+                          <i class="fa fa-support"></i>
+                          <p>Asesoria Juridica</p>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="">
+                          <i class="fa fa-calendar"></i>
+                          <p>UNP</p>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="">
+                          <i class="fa fa-th-list"></i>
+                          <p>Informes</p>
+                      </a>
+                  </li>
+                  
+<!--                   <li>
                       <a href="./?view=reservations">
                           <i class="fa fa-calendar"></i>
                           <p>Citas</p>
                       </a>
-                  </li>
-                  <li>
-                      <a href="./?view=pacients">
-                          <i class="fa fa-male"></i>
-                          <p>Pacientes</p>
-                      </a>
-                  </li>
-                  <li>
+                  </li> -->
+
+<!--                   <li>
                       <a href="./?view=medics">
                           <i class="fa fa-support"></i>
                           <p>Medicos</p>
                       </a>
-                  </li>
-                  <li>
+                  </li> -->
+<!--                   <li>
                       <a href="./?view=categories">
                           <i class="fa fa-th-list"></i>
                           <p>Categorias</p>
                       </a>
-                  </li>
-                  <li>
+                  </li> -->
+<!--                   <li>
                       <a href="./?view=reports">
                           <i class="fa fa-area-chart"></i>
                           <p>Reporte de Citas</p>
                       </a>
-                  </li>
+                  </li> -->
                   <li>
                       <a href="./?view=users">
                           <i class="fa fa-users"></i>
@@ -91,7 +135,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./"><b>Sistema de Citas Medicas</b></a>
+            <a class="navbar-brand" href="./"><b>Victimas del Conflicto</b></a>
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -141,8 +185,8 @@
                 </a>
               </li>
               <li>
-                <a href="http://evilnapsis.com/" target="_blank">
-                  Evilnapsis
+                <a href="http://jamundi.gov.co/" target="_blank">
+                  Oficina TIC Jamundi
                 </a>
               </li>
         <!--
@@ -165,7 +209,7 @@
             </ul>
           </nav>
           <p class="copyright pull-right">
-            <a href="http://evilnapsis.com" target="_blank">Evilnapsis</a> &copy; 2016 
+            <a href="http://jamundi.gov.co.com" target="_blank">Alcaldia Jamundi Oficina TIC</a> &copy; 2021 
           </p>
         </div>
       </footer>

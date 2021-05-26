@@ -16,7 +16,7 @@
 		print_r($u);
 		$u->name = "Agustin";
 		$u->lastname = "Ramos";
-		$u->email = "evilnapsis@gmail.com";
+		$u->email = "oficina.tic@jamundi.gov.co";
 		$u->password = sha1(md5("l00lapal00za"));
 		$u->add();
 
@@ -46,8 +46,9 @@
 				?>
 				<tr>
 				<td><?php echo $user->name." ".$user->lastname; ?></td>
-				<td><?php echo $user->email; ?></td>
 				<td><?php echo $user->username; ?></td>
+				<td><?php echo $user->email; ?></td>
+				<!-- <td><?php echo $user->username; ?></td> -->
 				<td>
 					<?php if($user->is_active):?>
 						<i class="fa fa-check"></i>

@@ -1,9 +1,10 @@
-# BookMedik
-Sistema de Citas Medicas usando PHP, MySQL y Bootstrap.
+# SISINFALCALDIAJAMUNDI
+Sistema de Informacion Alcaldia de Jamundi
 
+Basado en:
 Link: http://evilnapsis.com/2015/08/10/bookmedik-sistema-de-citas-medicas/
 
-### Version 2.0
+### Version 1.0
 
 - Gestion de Pacientes, Medicos
 - Creacion de Citas: Asunto, Paciente, medico, Fecha, Hora, Enfermedad, Sintomas, Medicamentos, Costo
@@ -15,4 +16,4 @@ Link: http://evilnapsis.com/2015/08/10/bookmedik-sistema-de-citas-medicas/
 - Reportes por paciente, medico, rango de fecha, estado, tipo de pago
 - Descarga de reporte enformato word
 
-### Powered by Evilnapsis
+### Powered by DiegoOchoa

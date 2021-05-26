@@ -1,7 +1,7 @@
 <?php
 /**
-* BookMedik
-* @author evilnapsis
+* SISINFALCALDIAJAMUNDI
+* @author DiegoOchoa
 **/
 
 if(count($_POST)>0){

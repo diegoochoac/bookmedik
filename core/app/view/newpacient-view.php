@@ -2,7 +2,7 @@
 	<div class="col-md-12">
 <div class="card">
   <div class="card-header" data-background-color="blue">
-      <h4 class="title">Nuevo Paciente</h4>
+      <h4 class="title">Nuevo Registro</h4>
   </div>
   <div class="card-content table-responsive">
 
@@ -61,28 +61,11 @@
       <input type="text" name="phone" class="form-control" id="phone1" placeholder="Telefono">
     </div>
   </div>
-  <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Enfermedad</label>
-    <div class="col-md-6">
-      <textarea name="sick" class="form-control" id="sick" placeholder="Enfermedad"></textarea>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Medicamentos</label>
-    <div class="col-md-6">
-      <textarea name="medicaments" class="form-control" id="sick" placeholder="Medicamentos"></textarea>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Alergia</label>
-    <div class="col-md-6">
-      <textarea name="alergy" class="form-control" id="sick" placeholder="Alergia"></textarea>
-    </div>
-  </div>
+  
 
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
-      <button type="submit" class="btn btn-primary">Agregar Paciente</button>
+      <button type="submit" class="btn btn-primary">Agregar</button>
     </div>
   </div>
 </form>

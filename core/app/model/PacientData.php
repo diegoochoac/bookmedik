@@ -1,6 +1,6 @@
 <?php
 class PacientData {
-	public static $tablename = "pacient";
+	public static $tablename = "userinfo";
 	public function PacientData(){
 		$this->title = "";
 		$this->email = "";
@@ -11,8 +11,8 @@ class PacientData {
 	}
 
 	public function add(){
-		$sql = "insert into ".self::$tablename." (name,lastname,gender,day_of_birth,address,phone,email,sick,medicaments,alergy,created_at) ";
-		$sql .= "value (\"$this->name\",\"$this->lastname\",\"$this->gender\",\"$this->day_of_birth\",\"$this->address\",\"$this->phone\",\"$this->email\",\"$this->sick\",\"$this->medicaments\",\"$this->alergy\",$this->created_at)";
+		$sql = "insert into ".self::$tablename." (first_name,first_lastname,gender,day_of_birth,address,phone,email,created_at) ";
+		$sql .= "value (\"$this->name\",\"$this->lastname\",\"$this->gender\",\"$this->day_of_birth\",\"$this->address\",\"$this->phone\",\"$this->email\",$this->created_at)";
 		Executor::doit($sql);
 	}
 
@@ -51,7 +51,7 @@ class PacientData {
 	}
 
 	public static function getCedula($cc){
-		$sql = "select * from ".self::$tablename." where id=$cc";
+		$sql = "select * from ".self::$tablename." where no=$cc";
 		$query = Executor::doit($sql);
 		return Model::many($query[0],new PacientData());
 	}
